@@ -3,11 +3,14 @@ public enum MediaType
     Game,
     Movie
 }
+
+
 class MediaItem
 {
-    public string Title { get; set; }
+    public string? Title { get; set; }
     public int Year { get; set; }
     public MediaType Kind { get; set; }
+    public List<string?>? Platforms { get; set; }
 
     private double rating;
     public double Rating
@@ -24,17 +27,25 @@ class MediaItem
             rating = value;
         }
     }
-    public MediaItem(string title, int year, MediaType kind, double rating)
+
+
+    public MediaItem(string? title, int year, MediaType kind, double rating, List<string?>? platforms = null)
     {
         this.Title = title;
         this.Year = year;
         this.Kind = kind;
         this.Rating = rating;
+        this.Platforms = platforms;
     }
 
     public void Print()
     {
-        Console.WriteLine($"Title: {Title}\nYear: {Year}\nKind: {Kind}\nRating: {Rating}\n");
+        Console.WriteLine($"Title: {Title}\nYear: {Year}\nKind: {Kind}\nRating: {Rating}\nPlatforms: {Platforms}");
+        if (Platforms != null && Platforms.Count > 0)
+        {
+            Console.WriteLine($"Platforms: {string.Join(", ", Platforms)}");
+        }
+        Console.WriteLine();
     }
 
 }
