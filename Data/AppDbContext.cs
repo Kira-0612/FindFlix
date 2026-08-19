@@ -1,3 +1,6 @@
+namespace FindFlix.Data;
+
+using FindFlix.Models;
 using Microsoft.EntityFrameworkCore;
 public class AppDbContext : DbContext
 {

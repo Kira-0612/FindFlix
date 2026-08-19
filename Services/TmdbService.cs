@@ -1,3 +1,6 @@
+namespace FindFlix.Services;
+
+using FindFlix.Models;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Net.Http;

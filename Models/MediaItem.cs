@@ -1,3 +1,5 @@
+namespace FindFlix.Models;
+
 public enum MediaType
 {
     Game,

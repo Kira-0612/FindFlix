@@ -1,4 +1,4 @@
-**For German Version please see [README_DE.md](README_DE.md)
+For German Version please see [README_DE.md](README_DE.md)
 
 # FindFlix
 

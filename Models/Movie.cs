@@ -1,3 +1,5 @@
+namespace FindFlix.Models;
+
 using System.Text.Json.Serialization;
 using Microsoft.VisualBasic;
 

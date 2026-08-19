@@ -1,4 +1,8 @@
-﻿using DotNetEnv;
+﻿using FindFlix.Data;
+using FindFlix.Models;
+using FindFlix.Services;
+
+using DotNetEnv;
 
 Env.Load();
 
