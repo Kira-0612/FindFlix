@@ -49,7 +49,7 @@ public class IgdbService
         Client.DefaultRequestHeaders.Add("Client-ID", ClientId);
         Client.DefaultRequestHeaders.Add("Authorization", $"Bearer {AccessToken}");
 
-        //der haupt Aufruf
+        //Main Call
         string query = ($"fields name, rating, first_release_date, summary, platforms.name;where name = \"{searchTerm}\"; limit 5;");
         StringContent content = new StringContent(query, Encoding.UTF8, "text/plain");
 
