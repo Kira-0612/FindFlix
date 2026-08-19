@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using FindFlix.Data;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
