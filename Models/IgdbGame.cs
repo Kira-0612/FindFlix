@@ -1,6 +1,5 @@
 using System.Text.Json.Serialization;
 
-
 public class Platform
 {
     public int Id { get; set; }

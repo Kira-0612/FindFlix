@@ -1,2 +1,6 @@
 bin/
 obj/
+FindFlix.db
+FindFlix.db-shm
+FindFlix.db-wal
+.env
